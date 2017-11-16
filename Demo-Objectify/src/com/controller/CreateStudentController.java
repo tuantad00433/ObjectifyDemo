@@ -24,7 +24,16 @@ public class CreateStudentController extends javax.servlet.http.HttpServlet {
         stu.setEmail(email);
         stu.setFullName(fullName);
         stu.setRollNumber(rollNumber);
-
+        for (int i=1;i<=10;i++){
+            Student student = new Student();
+            student.setStatus(1);
+            student.setId(String.valueOf(System.currentTimeMillis()+i+Math.random()));
+            student.setEmail("email"+i);
+            student.setAddress("address"+i);
+            student.setFullName("Nguyen Van"+i);
+            student.setRollNumber("Roll"+i);
+            ofy().save().entity(student);
+        }
 
 
      Key<Student> key = ofy().save().entity(stu).now();

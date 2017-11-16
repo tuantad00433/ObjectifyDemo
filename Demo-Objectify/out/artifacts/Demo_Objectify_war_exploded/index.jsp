@@ -24,5 +24,7 @@
 
   </form>
 
+  <a href="/getlist">Click here to fetch list of 5 of students</a>
+
   </body>
 </html>

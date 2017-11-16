@@ -24,5 +24,6 @@ public class LookupForm extends HttpServlet {
         req.setAttribute("studentFound",student);
         req.getRequestDispatcher("editForm.jsp").forward(req,resp);
 
+
     }
 }

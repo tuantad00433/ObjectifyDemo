@@ -48,6 +48,15 @@
         <url-pattern>/edit</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>GetList</servlet-name>
+        <servlet-class>com.controller.GetList</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetList</servlet-name>
+        <url-pattern>/getlist</url-pattern>
+    </servlet-mapping>
+
 
 
 </web-app>
